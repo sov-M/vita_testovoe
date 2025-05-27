@@ -1,0 +1,18 @@
+Backup started at 03:00
+Checking network connectivity
+ERROR: Ping timeout to gateway
+Storage health: OK
+User login detected
+ERROR: Invalid credentials
+Starting backup verification
+ERROR: Checksum mismatch
+System load: 1.2
+Memory usage: 65%
+ERROR: Swap space exhausted
+Synchronizing NTP time
+ERROR: Could not sync with time server
+Log cleanup in progress
+New kernel version available
+System reboot scheduled
+Security patches installed
+All checks completed

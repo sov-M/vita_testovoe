@@ -1,0 +1,20 @@
+System booting up...
+Loading module: network
+Loading module: storage
+ERROR: Failed to mount /dev/sda1
+User session started
+Disk check completed
+Memory allocation: 1024MB
+ERROR: Timeout on DHCP request
+Starting service: sshd
+Backup job initiated
+Filesystem check passed
+ERROR: Corrupted data in cache
+Network interface up: eth0
+ERROR: Could not resolve DNS
+Service started: cron
+Log rotation completed
+ERROR: Permission denied on /var/log
+System temperature: 42°C
+Daily report generated
+All systems nominal
