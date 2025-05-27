@@ -11,6 +11,8 @@
  2.
     Проверить можно добавить вывод ошибок в отдельный файл через: 2>
 
+![image](https://github.com/user-attachments/assets/11709cbe-5c1f-4f2f-aba7-d81dc5e25857)
+
 # Задание 2:
 
 1. 
