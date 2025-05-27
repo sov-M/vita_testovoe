@@ -1,36 +1,37 @@
 # vita_testovoe
 # Задание 1:
 1.
-Для запуска: <br />
-./log_counter.sh sample_logs <br />
-./log_counter.sh sample_logs/ <br />
-./log_counter.sh ./sample_logs/ <br />
+ Для запуска: <br />
+ ./log_counter.sh sample_logs <br />
+ ./log_counter.sh sample_logs/ <br />
+ ./log_counter.sh ./sample_logs/ <br />
 
-Если файл не исполняемый, сначала сделать исполняемым
-chmod +x /log_counter.sh
+ Если файл не исполняемый, сначала сделать исполняемым chmod +x /log_counter.sh
 
-2. Проверить можно добавить вывод ошибок в отдельный файл через: 2>
+ 2.
+    Проверить можно добавить вывод ошибок в отдельный файл через: 2>
 
-#Задание 2:
+# Задание 2:
 
 1. 
- docker-compose up -d
+  docker-compose up -d
 
 2.
- Сохранить изменения. <br />
- docker-compose exec nginx nginx -s reload <br />
- "docker-compose exec nginx"  выполнить команду внутри конейнера nginx <br />
- "nginx -s reload" - перезапустить nginx не прерывя соединения <br />
- Из-за смонтированого тома на хосте изменится всё автоматически. <br />
+  Сохранить изменения. <br />
+  docker-compose exec nginx nginx -s reload <br />
+  "docker-compose exec nginx"  выполнить команду внутри конейнера nginx <br />
+  "nginx -s reload" - перезапустить nginx не прерывя соединения <br />
+  Из-за смонтированого тома на хосте изменится всё автоматически. <br />
 
 3.
- В docker-compose.yml указано, что они изолированы в сети vita, между собой общаются используя имена nginx и go_app.
+   В docker-compose.yml указано, что они изолированы в сети vita, между собой общаются используя имена nginx и go_app.
 
-4. В compose нет авто.восстановления после сбоя, а в swarm авто.перезапускает контейнеры и раскидывает по узлам<br />
+4.
+   В compose нет авто.восстановления после сбоя, а в swarm авто.перезапускает контейнеры и раскидывает по узлам<br />
    управляет нагрузкой и отказоустойчивостью. <br />
    Compose для разработки используют, swarm для продакшена <br />
 
-#Задание 3:
+# Задание 3:
  1.
   Запуск контейнера с задаными параметрами: docker run -d  --name=vita_nginx -p 8081:80 nginx:alpine <br />
   ![image](https://github.com/user-attachments/assets/f2464544-de07-49a8-8c35-c369e3ecd849)
